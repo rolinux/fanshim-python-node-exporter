@@ -1,0 +1,12 @@
+[Unit]
+Description=Fan Shim Service
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root/devel/fanshim-python/examples
+ExecStart=/root/devel/fanshim-python/examples/automatic.py --threshold 75 --hysteresis 20 --delay 2 --noled
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
