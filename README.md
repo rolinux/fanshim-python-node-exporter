@@ -2,4 +2,7 @@
 
 Prior to installation run:
 
-`pip3 install fanshim`
+```
+$ sudo pip3 install fanshim psutil
+$ sudo mkdir -p /etc/node_exporter/
+```
