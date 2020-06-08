@@ -5,7 +5,7 @@ After=multi-user.target
 [Service]
 Type=simple
 #WorkingDirectory=/root/devel/fanshim-python/examples
-ExecStart=/usr/local/bin/automatic.py --threshold 75 --hysteresis 20 --delay 2 --noled
+ExecStart=/usr/local/bin/automatic.py --on-threshold 75 --off-threshold 60 --delay 2 --brightness 0
 Restart=on-failure
 
 [Install]
